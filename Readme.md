@@ -33,3 +33,7 @@ g++ world.cpp -o world
 - long double: Implementation-dependent; 8, 12/16 (~1.7E-308 - ~1.7E+308 with 15 decimal digits of precision/ ~3.4E-4932 - ~1.1E+4832 (when 10 bytes are used))
 - char: 1 byte (Signed: -128 - 127 / Unsigned: 0 - 255)
 - bool: 1 byte (true/false)
+
+# Type casting debugging
+- demo.cpp -o demo -Wconversion
+- demo.cpp -o demo -Wconversion -Werror

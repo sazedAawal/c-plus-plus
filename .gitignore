@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+
+# Compiled binaries currently in your folder
+data_types_app
+data_types_test
+hello
+multi_component
+student_grades
+style_practice
+temperature_converter
+type_conversions
+variable_practice
+world
