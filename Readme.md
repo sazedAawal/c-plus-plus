@@ -37,3 +37,7 @@ g++ world.cpp -o world
 # Type casting debugging
 - demo.cpp -o demo -Wconversion
 - demo.cpp -o demo -Wconversion -Werror
+
+# Pre-Increment (++i) vs. Post-Increment (i++)
+- ++i (Pre-increment): Increment first, use second. int i = 5; int a = ++i; // i becomes 6, then 'a' gets 6 (a = 6, i = 6)
+- i++ (Post-increment): Use first, increment second. int j = 5; int b = j++; // 'b' gets 5 first, then j becomes 6 (b = 5, j = 6)
