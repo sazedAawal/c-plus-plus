@@ -1,29 +1,84 @@
-# To Execute a Programme using Compiler like G++
-- Compile the Code:
-g++ world.cpp -o world
+# SEE++
+---
+this repository is based on the courseworks practiced with C++ in Coursera course by Microsoft. The followings will act as the notes on C++
 
-- Execute the Program:
-./world
+## Basic compilation:
 
-# Core Elements
+g++ program.cpp -o program
+
+## With warning flags:
+
+g++ -Wall program.cpp -o program
+
+## With additional warnings:
+
+g++ -Wall -Wextra program.cpp -o program
+
+## With debug information:
+
+g++ -Wall -g program.cpp -o program
+
+## Preprocessing stage (see preprocessor output):
+
+g++ -E program.cpp > preprocessed.txt
+
+## Compilation stage (generate assembly code):
+
+g++ -S program.cpp
+
+## Assembly stage (create object file):
+
+g++ -c program.cpp -o program.o
+
+## Linking stage (create executable):
+
+g++ program.o -o program
+
+## No optimization:
+
+g++ program.cpp -o program_O0
+
+## Basic optimization:
+
+g++ -O1 program.cpp -o program_O1
+
+## Standard optimization:
+
+g++ -O2 program.cpp -o program_O2
+
+## Maximum optimization:
+
+g++ -O3 program.cpp -o program_O3
+
+## Optimize for size:
+
+g++ -Os program.cpp -o program_Os
+
+---
+
+## Type casting debugging
+- demo.cpp -o demo -Wconversion
+- demo.cpp -o demo -Wconversion -Werror
+
+## Core Elements
 - Preprocessor
 - Headers: #include
 - Namespace: std
 
-# Programme Structure
+## Programme Structure
 - Preprocessor Directives: #include <iostream>; send instructions to compiler before compilation process begins.
 
 - Main Function: int main() function with return 0; the entry point of any programme, with bug, it will return anything else than 0;
 
 - Output Operation: std::cout << "Hi" ; helps in displaying the string on console.
 
-# Compilation Process
+## Compilation Process
 
 - Preprocessing
 - Compilation
 - Linking
 
-# Data Types - Memory & Value Ranges
+## Data Types - Memory & Value Ranges
 - int: 4 bytes (-2,147,483,648 - 2,147,483,647)
 - short: 2 bytes (-32,768 - 32,767)
 - long: 4 bytes
@@ -34,10 +89,6 @@ g++ world.cpp -o world
 - char: 1 byte (Signed: -128 - 127 / Unsigned: 0 - 255)
 - bool: 1 byte (true/false)
 
-# Type casting debugging
-- demo.cpp -o demo -Wconversion
-- demo.cpp -o demo -Wconversion -Werror
-
-# Pre-Increment (++i) vs. Post-Increment (i++)
+## Pre-Increment (++i) vs. Post-Increment (i++)
 - ++i (Pre-increment): Increment first, use second. int i = 5; int a = ++i; // i becomes 6, then 'a' gets 6 (a = 6, i = 6)
 - i++ (Post-increment): Use first, increment second. int j = 5; int b = j++; // 'b' gets 5 first, then j becomes 6 (b = 5, j = 6)
