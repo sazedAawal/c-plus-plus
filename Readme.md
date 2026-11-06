@@ -103,3 +103,16 @@ g++ -Os program.cpp -o program_Os
 
 ## Forward Declaration
 - Declare function prototype before main() function or in separate header file
+
+## Error Types
+- Syntax Errors: These are errors in the structure of the code that prevent it from compiling. The compiler will usually point out these errors with messages.
+- Runtime Errors: These occur during program execution and cause the program to crash or behave unpredictably. Examples include division by zero or infinite loops.
+- Logical Errors: These don't cause the program to crash but result in incorrect behavior. The program runs but produces wrong outputs or unexpected behavior. These can be the hardest to find because there are no error messages.
+
+## Debuggging Process/Steps
+1. Reproduce the Error
+2. Identify the Error Type
+3. Localize the Error
+4. Fix the Error
+5. Test the Fix
+6. Document what's been fixed
